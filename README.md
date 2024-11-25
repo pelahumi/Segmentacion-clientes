@@ -44,3 +44,23 @@ Tengo mi CRM y hago una extracción obteniendo una base de datos, y esa tabla ca
 Y el algoritmo se lo aplico a la persona, aplicandole unas rules y me dan un cluster, y lo devolvemos al CRM
 
 El kmeans tiene un grado de confianza, lo veremos + adelante en el caso practico
+
+
+
+
+## Que hay que hacer xd
+
+1) Ver patrones de comportamiento de los clientes (con los cluster)
+2) Pensar una estrategia de marketing
+3) Mjorar la retencion de clientes (algun descuentillo o algo)
+
+
+
+Lanzamos un kmeans, vemos con la ley del codo y la silueta a ver si el numero de cluster es el que es
+
+Ver el PCA para ver si un cierto grupo sigue una tendencia
+
+Una vez tenemos la bbdd y los cluster (para el clliente A cluster 1, para el cliente B cluster 2, etc.) tenemos que extraer esos datos de alguna manera (en csv, sql, algo con python, lo que queramos). En resumen tenemos que sacar el perfilado, y para ello tenemos que ver que variable es + significativa. Hay que ver el tamaño de los cluster, que sean mas o menos parecidos, que no haya cluster muy grandes y otros muy pequeños (Puede haber un cluster muy pequeñito, porque esta clusterizando un perfil muy concreto, pero que los demas esten mas o menos homogeneos)
+
+Y con esto ver un poco el analisis (visualizacion --> + imp con PowerBI)
+Comparar los cluster con la media (si sale un cluster de 16k y la media es 25k, cluster no es significativo al estar por debajo de la media)
