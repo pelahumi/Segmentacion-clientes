@@ -9,6 +9,4 @@ dict_prov = {'i\x81vila': 'Avila', 'Almeri\xada': 'Almeria', 'i\x81lava': 'Alava
 for key, value in dict_prov.items():
     df['Provincia'] = df['Provincia'].replace(key, value)
 
-df.to_csv('data/cleaned/Client_segment_cleaned.csv', sep=';', encoding='ISO-8859-1', index=False)
-
 # print(df.head())
